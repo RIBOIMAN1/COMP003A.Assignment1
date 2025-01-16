@@ -15,8 +15,9 @@ namespace COMP003.LectureActivity1
         static void Main(string[] args)
         {
             // Display a single message
-            Console.WriteLine("Hello, World!\n\tStuff");
-
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello, " + name + "! My name is Jonathan Cruz.\n\n\nHere are 10 things about me:\n\t1. I have started using computers at the young age of 4 years old.\n\t2. ");
         }
     }
 }
