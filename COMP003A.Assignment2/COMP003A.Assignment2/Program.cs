@@ -10,14 +10,20 @@ namespace COMP003A.Assignment2
         static void Main(string[] args)
         {
             // Step 3.1: Declare and initialize variables
-            string userName; // Variable to store the user's name
+            string userFirstName; // Variable to store the user's first name
+            string userLastName; // Variable to store the user's first name
             int userAge; // Variable to store the user's age
             double productPrice; // Variable to store the product price
             bool isStudent; // Variable to store if the user is a student (true/false)
 
+            Console.Write("**************************************************\nWelcome to the Discount Calculator!\n**************************************************\n"); // Greeting message for the user
+
             // Prompt the user to enter their name
-            Console.Write("Enter your name: ");
-            userName = Console.ReadLine(); // Read and assign the user's input to userName
+            Console.Write("What is your first name? ");
+            userFirstName = Console.ReadLine(); // Read and assign the user's input to userFirstName
+
+            Console.Write("What is your last name? ");
+            userLastName = Console.ReadLine(); // Read and assign the user's input to userLastName
 
             // Prompt the user to enter their age
             Console.Write("Enter your age: ");
@@ -37,7 +43,7 @@ namespace COMP003A.Assignment2
             bool isAdultStudent = isStudent && isAdult; // Determine if the user is both a student and an adult
 
             // Step 3.3: Display outputs using string interpolation
-            Console.WriteLine($"\nHello, {userName}!"); // Greet the user with their name
+            Console.WriteLine($"\nHello, {userFirstName} {userLastName}!"); // Greet the user with their name
             Console.WriteLine($"You are currently {userAge} years old. In 5 years, you will be {futureAge}."); // Display current and future age
             Console.WriteLine($"Are you 18 or older? {isAdult}"); // Display if the user is 18 or older
             Console.WriteLine($"Are you both a student and 18 or older? {isAdultStudent}"); // Display if the user is both a student and an adult
